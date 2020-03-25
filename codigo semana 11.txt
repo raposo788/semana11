@@ -1,0 +1,45 @@
+semana 11 codigos
+
+node index.js
+
+/**  rotas e recursos
+* get=buscar/listar uma informação no backend
+* post= criar uma onformação no backend
+* put=alterar uma informaçao no back end
+* delete= deletar uma infirmaçao no backend  ]
+*/
+
+/** TIPOS DE PARAMETROS
+* QUERY PARAMS= Parametros nomeados enviados na rota apos '?' ex(filtros ,paginação)
+* ROUTE PARAMS= Parametros usado para identificar recursos
+* REQUEST BODY= corpo da requisiçao , utilizado para criar ou alerar recursos
+ */
+
+/** 
+ * Driver : SELECT * FROM users
+ * Query Builder: table('users').select('*').where()
+ */
++++++++++++++++++++++++++++++++
+npm install nodemon -D  #para nao ser preciso estar reniciando o index.js
+
+#instalaçao do script personalizado nodemon
+
+"scripts": {
+    "start": "nodemon index.js"
+  },
+
+#após tudo, no terminal
+npm start
+
+# usar sempre para iniciar o backend
+++++++++++++++++++++++++++++++++++
+#############################
+#instalar o banco de dados
+npm install knex
+
+npm install sqlite3
+
+#inciar o knex do banco de dados
+npx knex init
+
+###################################
