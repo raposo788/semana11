@@ -1,5 +1,32 @@
 semana 11 codigos
 
+### Estrutura ###
+backend
+|----src
+|       |__controllers
+|       |            |__IncidentController.js
+|       |            |
+|       |            |__OngController.js
+|       |            
+|       |            
+|       |__database
+|       |            |__migrations
+|       |            |              |__tabelas   #tabelas do banco de dados
+|       |            |
+|       |            |__connection.js      #conexão com o banco de dados
+|       |            |
+|       |            |__db.sqlite               #banco de dados 
+|       |            
+|       |   
+|       |__index.js
+|       |            
+|       |__routes.js
+|       
+|__knexfile.js
+|
+|__package.json     
+
+
 node index.js
 
 /**  rotas e recursos
@@ -51,3 +78,16 @@ npx knex migrate:make create_incidents  #create_incidents nome da tabela
 #adiciona linhas rows na tabela
 
 npx knex migrate:latest
+
++++++++++++++++++++++++++++++++
+#inicio de controllers 
+#conexão com banco de dados
+#exportação de modulos
+
+
+const connection = require("../database/connection");
+
+module.exports = {
+  async index(request, response) {
+
+}};
