@@ -43,3 +43,11 @@ npm install sqlite3
 npx knex init
 
 ###################################
+* criar tabela no banco de dados com migrations
+
+npx knex migrate:make create_ongs  #create_ongs nome da tabela
+npx knex migrate:make create_incidents  #create_incidents nome da tabela
+
+#adiciona linhas rows na tabela
+
+npx knex migrate:latest
